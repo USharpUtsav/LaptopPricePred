@@ -2,8 +2,8 @@ import streamlit as st
 import pickle
 import numpy as np
 
-pipe=pickle.load(open('pipe.pkl','rb'))
-df=pickle.load(open('df.pkl','rb'))
+pipe=pd.read_pickle(open('pipe.pkl','rb'))
+df=pd.read_pickle(open('df.pkl','rb'))
 
 st.title("Utsav Laptop Price Predictor")
 
